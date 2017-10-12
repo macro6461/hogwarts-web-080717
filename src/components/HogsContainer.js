@@ -53,8 +53,12 @@ class HogsContainer extends Component{
         </div>
         <div className="ui grid container">
           {this.state.hogs.map((hog, index) => {
-              return <Hog key={index} hog={hog}/>
-            }
+            return(
+              <div key={index}>
+                <Hog hog={hog}/>
+              </div>
+            )
+          }
           )}
         </div>
     </div>
